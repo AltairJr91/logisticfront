@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background-color: rgb(18, 14, 8);
+    background-image: linear-gradient(0deg, rgba(18, 14, 8, 1) 0%, rgba(245, 131, 8, 1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Cambria;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}

@@ -1,0 +1,31 @@
+
+<div class="container-lg d-flex justify-content-center p-4">
+    <div class="col-4">
+        <div class="card shadow round">
+            <div class="card-header">
+                <h3 class="text-center">
+                    Insira seu login
+                </h3>
+            </div>
+            <div class="card-body">
+                <form [formGroup]="formLogin" (ngSubmit)="submitForm()" class="d-flex flex-column align-items-center w-50">
+                    <div class="mb-3">
+                        <label class="form-label" for="user">Usuario</label>
+                        <input type="text" class="form-control" name="user" formControlName="username">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="password">Senha</label>
+                        <input type="password" class="form-control" name="password" formControlName="password">
+                    </div>
+
+
+                    <button type="submit" class="btn btn-dark mt-1" [disabled]="!formLogin.valid">Acessar</button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
